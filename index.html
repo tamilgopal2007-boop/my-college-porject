@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LegalEase</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main class="shell"><header><div class="mark">LE</div><div><h1>LegalEase</h1><p>Clearer documents. Confident decisions.</p></div></header>
+<section class="intro"><span class="eyebrow">AI-ASSISTED DOCUMENT STUDIO</span><h2>Create a first draft<br><em>that works for you.</em></h2><p>Customize a starting document with your parties, dates, and key terms. Edit it before exporting.</p></section>
+<section class="workspace"><form id="draftForm"><h3>Document details</h3>
+<label>Document type<select id="type"><option>Employment Contract</option><option>Lease Agreement</option><option>NDA</option></select></label>
+<div class="two"><label>Party A<input id="a" placeholder="Company / landlord / disclosing party" required></label><label>Party B<input id="b" placeholder="Employee / tenant / receiving party" required></label></div>
+<div class="two"><label>Effective date<input id="date" type="date"></label><label>Jurisdiction<input id="jurisdiction" placeholder="e.g. Tamil Nadu, India"></label></div>
+<label>Key terms<textarea id="terms" rows="4" placeholder="Payment, duration, duties, notice period, special conditions..."></textarea></label>
+<button type="submit">Generate draft <span>→</span></button></form>
+<div class="preview"><div class="previewhead"><h3>Editable preview</h3><div><button type="button" class="secondary" id="copy">Copy</button><button type="button" class="secondary" id="download">Download .txt</button></div></div>
+<textarea id="output" rows="22" placeholder="Your generated document will appear here. You can edit it directly."></textarea>
+<p class="hint">Review all details and have important documents checked by a qualified lawyer.</p></div></section>
+<footer>LegalEase · Private drafting workspace · Demo starter</footer></main><script src="/static/app.js"></script></body></html>
